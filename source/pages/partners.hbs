@@ -1,0 +1,32 @@
+---
+layout: horizontal
+---
+
+<div class="page-heading page-heading--loop page-heading--partners bg-image bg--ph-01">
+	<div class="page-heading__subtitle h5 color-primary">E-Sports Full W</div>
+	<h1 class="page-heading__title h2">Patrocinadores</h1>
+	<div class="page-heading__body">
+		<div class="h6 text-sm color-primary">Quieres ser parte de nuestros patrocinadores?</div>
+		<div class="h6"><a>+593 99 812 4392</a></div>
+	</div>
+</div>
+<div class="content partners-layout">
+	{{#each content.partners.full}}
+	<article class="partner">
+		<div class="partner__logo">
+			<img src="{{img}}" alt="{{title}}">
+		</div>
+		<div class="partner__header">
+			<h2 class="partner__title h4">{{title}}</h2>
+			<a href="#" class="partner__info">{{info}}</a>
+		</div>
+		<p class="partner__excerpt">{{excerpt}}</p>
+		<ul class="social-menu social-menu--links">
+			{{#each socials}}
+			<li><a href="{{link}}"></a></li>
+			{{/each}}
+		</ul>
+	</article>
+	{{/each}}
+
+</div>
